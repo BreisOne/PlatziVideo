@@ -6,13 +6,15 @@ body{
   grid-template-columns: 20vw 80vw;
   /* grid-template-rows: 60vh 40vh; */
 }
-
+ h2{
+   font-size: 1.8em;
+ }
 .menu{
   display:grid;
   grid-area: menu;
-  position:relative;
-  height: auto;
-  padding: 2em;
+  position: fixed;
+  width: 20vw;
+  height: 100vh;
   justify-content: center;
   align-items: center;
   background-color: rgb(20, 28, 48);
@@ -21,12 +23,12 @@ body{
 
 }
 .playlist{
-  position:absolute;
-  top:10%;
-  left:25%;
 }
 .list{
   height: 60%;
+}
+.listItem{
+  font-size: 1.5em;
 }
 .playlistAmigos{
   height: 40%;
@@ -48,7 +50,7 @@ body{
 
 .VideoInfo{
   width: 100%;
-  background-color: red;
+  background-color: white;
   margin-top: -20%;
 }
 .content{
