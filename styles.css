@@ -46,11 +46,16 @@ body{
   width: 100%;
 }
 
+.VideoInfo{
+  width: 100%;
+  background-color: red;
+  margin-top: -20%;
+}
 .content{
   display:grid;
   grid-area: content;
   position:relative;
-  grid-template-areas: "comments sugest";
+  grid-template-areas: "comments suggest";
   grid-template-columns: 1fr 1fr;
   border: 1px solid red;
 }
@@ -62,9 +67,9 @@ body{
   grid-area: comments;
   max-width: 500px;
 }
-.sugest {
+.suggest {
   display: grid;
-  grid-area: sugest;
+  grid-area: suggest;
 }
 .CommentsList{
   margin:0;
@@ -88,11 +93,16 @@ body{
 .avatar img{
   width: 100%;
 }
-.sugestIMG {
-  width: 300px;
+.suggestIMG {
+  max-width: 300px;
+  margin: 1em auto;
 }
-.sugestIMG img{
+.suggestIMG img{
   width: 100%;
   object-fit: contain;
 
+}
+
+.suggestTitle{
+  margin: 0 auto;
 }
