@@ -8,7 +8,8 @@ body{
   /* grid-template-rows: 60vh 40vh; */
 }
  h2{
-   font-size: 1.8em;
+   text-align: center;
+   font-size: 1.5em;
  }
  h4{
    margin:0;
@@ -20,21 +21,35 @@ body{
   width: 20vw;
   height: 100vh;
   justify-content: center;
-  align-items: center;
   background-color: rgb(20, 28, 48);
   color: white;
 
 }
+.logo{
+  display:inline;
+  margin:0;
+  width: 20vw;
+  height: 82px;
+  object-fit: contain;
+}
+.logo img{
+  width: 100%;
+}
 .playlist{
+  display: grid;
+  justify-content: center;
+  width: 20vw;
 }
 .list{
-  height: 60%;
+  padding-inline-start:20px;
+  margin: 0 auto;
 }
 .listItem{
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .playlistAmigos{
-  height: 40%;
+  padding-inline-start:20px;
+  margin: 0 auto;
 }
 .HeroContent{
   display:grid;
