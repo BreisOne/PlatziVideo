@@ -1,5 +1,6 @@
 body{
   overflow-x: hidden;
+  font-family: 'Lato', sans-serif;
   display: grid;
   margin:0;
   grid-template-areas: "menu HeroContent"
@@ -8,7 +9,11 @@ body{
   /* grid-template-rows: 60vh 40vh; */
 }
  h2{
-   font-size: 1.8em;
+   text-align: center;
+   font-size: 1.5em;
+ }
+ h4{
+   margin:0;
  }
 .menu{
   display:grid;
@@ -17,27 +22,39 @@ body{
   width: 20vw;
   height: 100vh;
   justify-content: center;
-  align-items: center;
   background-color: rgb(20, 28, 48);
-  border: 1px solid red;
   color: white;
 
 }
+.logo{
+  display:inline;
+  margin:0;
+  width: 20vw;
+  height: 82px;
+  object-fit: contain;
+}
+.logo img{
+  width: 100%;
+}
 .playlist{
+  display: grid;
+  justify-content: center;
+  width: 20vw;
 }
 .list{
-  height: 60%;
+  padding-inline-start:20px;
+  margin: 0 auto;
 }
 .listItem{
-  font-size: 1.5em;
+  font-size: 1em;
 }
 .playlistAmigos{
-  height: 40%;
+  padding-inline-start:20px;
+  margin: 0 auto;
 }
 .HeroContent{
   display:grid;
   grid-area: HeroContent;
-  border: 1px solid red;
 }
 .video{
   max-width:1500px;
@@ -54,13 +71,76 @@ body{
   background-color: white;
   margin-top: -20%;
 }
+.description{
+  display: inline-block;
+  padding: 1% 1% 3% 3%;
+}
+.nameSong{
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: .5em;
+}
+
+.containerActions{
+  display:flex;
+  max-width: 1440px;
+  justify-content: space-around;
+  align-items: center;
+  /* box-sizing: border-box; */
+}
+.actions{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin:0;
+  justify-content:space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.actions li{
+  margin: .8em;
+  text-align: center;
+}
+.agregar{
+  height: 3em;
+  border:none;
+  border-radius: 10px;
+  padding: .5em;
+}
+
+.Categories {
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: .8em;
+  justify-content: space-between;
+  align-items: center;
+}
+.Categories button {
+  width: 5em;
+  padding: .5em;
+  margin-left: .8em;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  box-shadow: none;
+}
+
+.Rock{
+  background-color: #8d3cf4;
+}
+.Metal{
+  background-color: #27fdbc;
+}
+.Classic{
+  background-color: #c90021;
+}
+
 .content{
   display:grid;
   grid-area: content;
   position:relative;
   grid-template-areas: "comments suggest";
   grid-template-columns: 1fr 1fr;
-  border: 1px solid red;
 }
 
 .comments{
@@ -88,7 +168,6 @@ body{
   width: 40px;
   height: 40px;
   margin:0 auto;
-  border: 1px solid red;
   border-radius: 50%;
   overflow: hidden;
 
