@@ -1,4 +1,5 @@
 body{
+  overflow-x: hidden;
   display: grid;
   margin:0;
   grid-template-areas: "menu HeroContent"
